@@ -25,7 +25,7 @@ metadata:
   labels:
     app: webapp-demo
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: webapp-demo
@@ -36,6 +36,6 @@ spec:
     spec:
       containers:
       - name: webapp-demo
-        image: chrisquiles/circleci-webappdemo:0.1.32
+        image: chrisquiles/circleci-webappdemo:0.1.38
         ports:
         - containerPort: 80
